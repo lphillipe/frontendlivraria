@@ -1,0 +1,168 @@
+/* 
+  -----------------------------------------------------------------------------
+  Reset de estilo padrão ao acessar diferentes navegadores
+  -----------------------------------------------------------------------------
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+ -----------------------------------------------------------------------------
+ Estilo padrão do corpo do site. 
+ -----------------------------------------------------------------------------
+*/
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f3f4f7, #e2e7ed);
+  color: #2c3e50;
+  padding: 10px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+/* 
+  -----------------------------------------------------------------------------
+  Cabeçalho 
+  -----------------------------------------------------------------------------
+*/
+header {
+  text-align: center;
+  padding: 10px;
+  background: linear-gradient(90deg, #4a90e2, #0072ff);
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+header .title h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+header .banner img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  margin-top: 10px;
+  height: auto;
+}
+
+/* 
+  ----------------------------------------------------------------------------
+  Formulário de novo livro 
+  ----------------------------------------------------------------------------
+*/
+.newItem {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 800px;
+}
+
+.newItem input {
+  padding: 8px;
+  font-size: 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 150px;
+  transition: all 0.3s ease;
+}
+
+.newItem input:focus {
+  border-color: #4a90e2;
+  outline: none;
+  box-shadow: 0 0 3px rgba(74, 144, 226, 0.3);
+}
+/*
+  ----------------------------------------------------------------------------
+  Botão adicionar livro
+  ----------------------------------------------------------------------------
+*/
+.newItem .addBtn {
+  background: linear-gradient(90deg, #28a745, #5ec55b);
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.newItem .addBtn:hover {
+  background: linear-gradient(90deg, #5ec55b, #28a745);
+  box-shadow: 0px 2px 5px rgba(40, 167, 69, 0.2);
+}
+
+/*
+  ----------------------------------------------------------------------------
+  Lista de Livros 
+  ----------------------------------------------------------------------------
+*/
+.books {
+  margin-top: 10px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.books table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.books th, .books td {
+  text-align: center;
+  padding: 8px;
+  font-size: 0.9rem;
+}
+
+.books th {
+  background: linear-gradient(90deg, #4a90e2, #0072ff);
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.books td {
+  background-color: #f9f9f9;
+}
+
+.books tr:nth-child(even) td {
+  background-color: #f4f4f4;
+}
+
+.books tr:hover td {
+  background-color: #eef7ff;
+  transition: all 0.3s ease;
+}
+
+.books img {
+  cursor: pointer;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.books img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.1);
+}

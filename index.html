@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Projeto Mvp Livraria Online</title>
+</head>
+
+<body>
+     <!-- Cabeçalho da Livraria -->
+    <header>
+        <div class="title">
+            <h1>Livraria Online</h1>
+        </div>
+        <div class="banner">
+            <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxOTMzODh8MHwxfHNlYXJjaHwxfHxsaWJyYXJ5fGVufDB8fHx8MTYyOTgyNjg3Ng&ixlib=rb-1.2.1&q=80&w=1200" alt="Livraria">
+        </div>
+    </header>
+
+    <!-- Formulário para adicionar livros -->
+    <section class="newItem">
+        <input type="text" id="newBook" placeholder="Título do Livro:">
+        <input type="text" id="newAuthor" placeholder="Autor do Livro:">
+        <input type="number" id="newQuantity" placeholder="Quantidade:">
+        <input type="text" id="newPrice" placeholder="Valor:">
+        <button onclick="newItem()" class="addBtn">Adicionar Livro</button>
+    </section>
+
+    <!-- Lista de livros -->
+    <section class="books">
+        <table id="booksTable">
+            <tr>
+                <th>Título</th>
+                <th>Autor</th>
+                <th>Quantidade</th>
+                <th>Valor</th>
+                <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15px" height="15px"></th>
+            </tr>
+        </table>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
