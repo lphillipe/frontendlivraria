@@ -87,7 +87,7 @@ const removeElement = () => {
 
 /*
   --------------------------------------------------------------------------------------
-  Função para deletar um item da lista do servidor via requisição DELETE
+  Função para deletar um livro da lista do servidor via requisição DELETE
   --------------------------------------------------------------------------------------
 */
 const deleteItem = (item) => {
